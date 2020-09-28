@@ -85,6 +85,7 @@ public class DateHelper {
 		}
 		Date now = new Date();
 
+		
 		Date fromDate = addHoursToJavaUtilDate(getGetTodaysDateWithNoTime(), from);
 		Date toDate = addHoursToJavaUtilDate(getGetTodaysDateWithNoTime(), to);
 		return fromDate.before(now) && now.before(toDate);
